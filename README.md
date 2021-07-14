@@ -11,9 +11,6 @@ local tweeninfo = TweenInfo.new
 -- additional
 local utility = {}
 
-local UIGradient = Instance.new("UIGradient")
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(242, 157, 76)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(238, 201, 86))}
-
 -- themes
 local objects = {}
 local themes = {
@@ -22,7 +19,7 @@ local themes = {
 	Accent = Color3.fromRGB(10, 10, 10), 
 	LightContrast = Color3.fromRGB(20, 20, 20), 
 	DarkContrast = Color3.fromRGB(10,10,10),  
-	TextColor = UIGradient.Color
+	TextColor = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(242, 157, 76)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(238, 201, 86))}
 }
 
 do
